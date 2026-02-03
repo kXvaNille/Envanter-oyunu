@@ -8,12 +8,20 @@ class Program
     static void Main(string[] args)
     {
 
+
         Selamla();
         BaslangicEkrani();
         HasarVer("Goblin", 20);
+        int gelenSayi = KritikVurusYap(50);
+        Console.WriteLine("Kritik vuruş sonucu: " + gelenSayi);
         HasarVer("Ejderha", 50);       
         BitisEkrani();
 
+    }
+    static int KritikVurusYap(int safHasar)
+    {
+        int sonuc = safHasar * 2;
+        return sonuc;
     }
     static void HasarVer(string dusmanAdi, int hasarMik)
     {
